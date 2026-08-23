@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: argo01
+  namespace: argo-01
 spec:
   selector:
     matchLabels:
@@ -13,7 +14,7 @@ spec:
         app: argo01
     spec:
       containers:
-      - name: myapp
+      - name: argo01
         image: nanajanashia/argocd-app:1.2
         ports:
         - containerPort: 8080

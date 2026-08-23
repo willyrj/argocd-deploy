@@ -12,8 +12,11 @@ spec:
     path: ./argo01
   destination:
     server: https://kubernetes.default.svc
-    namespace: myapp
+    #namespace: argo01
+  
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+    - CreateNamespace=true      
