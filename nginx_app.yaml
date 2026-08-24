@@ -2,14 +2,14 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: nginx
-  namespace: ngix
+  namespace: nginx
 spec:
   project: default
 
   source:
-    repoURL: https://gitlab.com/nanuchi/argocd-app-config.git
+    repoURL: https://github.com/willyrj/argocd-deploy.git
     targetRevision: HEAD
-    path: dev
+    path: ./nginx_test
   destination: 
     server: https://kubernetes.default.svc
     namespace: nginx
