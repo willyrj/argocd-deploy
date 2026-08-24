@@ -12,7 +12,7 @@ spec:
     path: ./nginx_test
   destination: 
     server: https://kubernetes.default.svc
-    namespace: nginx
+    #namespace: nginx
 
   syncPolicy:
     syncOptions:
