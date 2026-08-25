@@ -5,7 +5,7 @@ clusterName: ai71-euw3-dev-ask-gke-01
 namespaces:
   assistantService: ask71
   qdrant: qdrant
-  # hatchet: hatchet
+  hatchet: hatchet
   iamService: iam-service
 
 # Per-namespace override of the `pod-security.kubernetes.io/enforce` label (default: baseline).
