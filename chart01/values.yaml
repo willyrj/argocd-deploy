@@ -4,7 +4,7 @@ clusterLocation: europe-west3
 clusterName: ai71-euw3-dev-ask-gke-01 
 namespaces:
   assistantService: ask71
-  qdrant: qdrant
+#  qdrant: qdrant
   hatchet: hatchet
   iamService: iam-service
 
