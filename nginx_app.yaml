@@ -2,10 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: nginx
-  namespace: nginx
+  namespace: argocd
 spec:
   project: default
-
   source:
     repoURL: https://github.com/willyrj/argocd-deploy.git
     targetRevision: HEAD
@@ -17,7 +16,6 @@ spec:
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
-
     automated:
       selfHeal: true
       prune: true

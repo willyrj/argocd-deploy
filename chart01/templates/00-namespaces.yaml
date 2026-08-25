@@ -1,0 +1,10 @@
+{{- range $key, $name := .Values.namespaces }}
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: {{ $name }}
+  labels:
+    name: {{ $name }}
+    pod-security.kubernetes.io/enforce: {{ index $.Values.namespacePodSecurity $key | default "baseline" }}
+{{- end }}
