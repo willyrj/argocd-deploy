@@ -1,5 +1,5 @@
 apiVersion: v2
-name: workload-identity
+name: chart01
 description: GKE Workload Identity bindings for the Ask stack (core, assistant/km, hatchet, external-secrets).
 type: application
 version: 0.1.0

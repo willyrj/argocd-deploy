@@ -4,7 +4,7 @@ metadata:
   name: nginx-deployment
   labels:
     app: nginx
-  namespace: nginx
+  namespace: {{ $.Values.namespaces.assistantService }}
 spec:
   replicas: 1
   selector:
